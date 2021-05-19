@@ -50,7 +50,11 @@ async function predictor()
       // },
   }
   await getter(params,url).then(label => {
-    console.log(label);
+    preds = label['label']
+    console.log(preds);
+    var modal = document.getElementById("myModal");
+    modal.innerHTML = preds;
+    modal.style.display = "block";
   });
 
 }
