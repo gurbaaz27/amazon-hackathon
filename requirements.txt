@@ -4,4 +4,4 @@ lightgbm==3.1.0
 numpy==1.18.5
 scikit-learn==0.24.1
 sklearn==0.0
-
+python-dotenv==0.17.1

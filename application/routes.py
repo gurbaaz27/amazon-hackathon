@@ -1,12 +1,9 @@
-# import flask
+from application import app
 
 from sklearn import preprocessing
 import numpy as np
 from flask import Flask, request as req
 import pickle as pkl
-
-
-app = Flask(__name__)
 
 campaign_encoder = preprocessing.LabelEncoder()
 campaign_encoder.classes_ = np.load('./campaign.npy',allow_pickle = True)
