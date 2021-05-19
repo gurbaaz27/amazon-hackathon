@@ -24,7 +24,7 @@ shopping_stage_encoder.classes_ = np.load('shopping_stage.npy',allow_pickle = Tr
 
 loaded_model = pkl.load(open('model.pickle.dat', "rb"))
 
-@app.route("/predict", methods=['POST'])
+@app.route("/", methods=['POST'])
 def make_prediction():
         
         avg_session_duration = req.args['avg_session_duration']
@@ -57,4 +57,4 @@ def make_prediction():
 
     
 if __name__ == '__main__':
-    app.run( port = 8080, debug=True)
+    app.run(debug=True)
