@@ -41,7 +41,7 @@ async function predictor()
          frequency : Math.floor(randomNumber(1,20)),
     };
     console.log(Data);
-  const url = 'https://cors-anywhere.herokuapp.com/https://153252820f7592.localhost.run/predict';
+  const url = 'https://cors-anywhere.herokuapp.com/https://ad2a8fa4df5f31.localhost.run/predict';
   const params = {
       body:JSON.stringify(Data),
       method:'POST',
@@ -52,9 +52,8 @@ async function predictor()
   await getter(params,url).then(label => {
     preds = label['label']
     console.log(preds);
-    var modal = document.getElementById("myModal");
-    modal.innerHTML = preds;
-    modal.style.display = "block";
+    document.getElementById("bn").click();
+    document.getElementById("mypart").innerHTML = 'The Buyer Type is ' + preds;
   });
 
 }
