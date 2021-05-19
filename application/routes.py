@@ -5,21 +5,27 @@ import numpy as np
 from flask import Flask, request as req
 import pickle as pkl
 
+filepath = './application'
+
 campaign_encoder = preprocessing.LabelEncoder()
-campaign_encoder.classes_ = np.load('./campaign.npy',allow_pickle = True)
+campaign_encoder.classes_ = np.load(filepath+'/campaign.npy',allow_pickle = True)
 
 device_category_encoder = preprocessing.LabelEncoder()
-device_category_encoder.classes_ = np.load('./device_category.npy',allow_pickle = True)
+device_category_encoder.classes_ = np.load(filepath+'/device_category.npy',allow_pickle = True)
 
 social_network_encoder = preprocessing.LabelEncoder()
-social_network_encoder.classes_ = np.load('./social_network.npy',allow_pickle = True)
+social_network_encoder.classes_ = np.load(filepath+'/social_network.npy',allow_pickle = True)
 
 shopping_stage_encoder = preprocessing.LabelEncoder()
-shopping_stage_encoder.classes_ = np.load('./shopping_stage.npy',allow_pickle = True)
+shopping_stage_encoder.classes_ = np.load(filepath+'/shopping_stage.npy',allow_pickle = True)
 
 
 
-loaded_model = pkl.load(open('./model.pickle.dat', "rb"))
+loaded_model = pkl.load(open(filepath+'/model.pickle.dat', "rb"))
+
+@app.route('/')
+def home():
+    return 'Hello World!'
 
 @app.route("/predict", methods=['POST'])
 def make_prediction():
