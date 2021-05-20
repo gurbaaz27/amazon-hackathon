@@ -1,2 +1,4 @@
 /archive/*.csv
 /final_data.csv
+/rough.ipynb
+/.ipynb_checkpoints
