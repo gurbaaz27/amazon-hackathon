@@ -29,6 +29,29 @@ def index():
     data = {'labels':books}
     return data
 
+@app.route("/learn")
+def learn():
+    args = json.loads(req.data)
+    feat1 = args['Location']
+    feat2 = args['Age']
+    feat3 = args['Country']
+    feat4 = args['Book_Author']
+    feat5 = args['Year_Of_Publication']
+    action = args['Book_Title']
+    cost = args['cost']
+    probability = args['probability']
+    action = action_encoder.transform([action])
+    learn_example = str(action) + ":" + str(cost) + ":" + str(probability) + " | " + str(feat1) + " " + str(feat2) + " " + str(feat3) +" " + str(feat4) + " " + str(feat5)
+    vw.learn(learn_example)
+    vw.save('cb.model')  
+    test = "| " + str(feat1) + " " + str(feat2) + " " + str(feat3)+ " " + str(feat4) + " " + str(feat5)
+    preds = np.array(vw.predict(test))
+    indices = (-preds).argsort()[:5]
+    books = []
+    for ind in indices :
+        books.append(action_encoder.inverse_transform([int(ind)])[0])
+    data = {'labels':books}
+    return data
 
 if __name__ == '__main__':
     app.run(port = 8080,debug=True)
