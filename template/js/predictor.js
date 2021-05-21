@@ -41,13 +41,14 @@ async function predictor()
          frequency : Math.floor(randomNumber(1,20)),
     };
     console.log(Data);
-  const url = 'https://cors-anywhere.herokuapp.com/https://ad2a8fa4df5f31.localhost.run/predict';
+  const url = 'https://cors-anywhere.herokuapp.com/https://customer-classifier-app.herokuapp.com/predict';
   const params = {
       body:JSON.stringify(Data),
+      // credentials: 'include',
       method:'POST',
-      // headers : {
-      //   'Content-Type': 'application/json',
-      // },
+      headers : {
+        'Content-Type': 'text/plain',
+      },
   }
   await getter(params,url).then(label => {
     preds = label['label']
