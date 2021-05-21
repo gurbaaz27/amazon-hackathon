@@ -7,7 +7,7 @@ import json
 action_encoder = preprocessing.LabelEncoder()
 action_encoder.classes_ = np.load('action_encoder.npy',allow_pickle = True)
 
-vw = pyvw.vw("--cb 135567 -i cb.model")
+vw = pyvw.vw("--cb_explore  135567 --epsilon 0.2 -i cb.model")
 
 app = Flask(__name__)
 
@@ -21,10 +21,12 @@ def index():
     feat5 = args['Year_Of_Publication']
 
     test = "| " + str(feat1) + " " + str(feat2) + " " + str(feat3)+ " " + str(feat4) + " " + str(feat5)
-    preds = vw.predict(test)
-    print(preds)
-    label = action_encoder.inverse_transform([preds])[0]
-    data = {'label':label}
+    preds = np.array(vw.predict(test))
+    indices = (-preds).argsort()[:5]
+    books = []
+    for ind in indices :
+        books.append(action_encoder.inverse_transform([int(ind)])[0])
+    data = {'labels':books}
     return data
 
 
