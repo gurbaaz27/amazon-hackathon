@@ -41,7 +41,7 @@ async function predictor()
          frequency : Math.floor(randomNumber(1,20)),
     };
     console.log(Data);
-  const url = 'https://cors-anywhere.herokuapp.com/https://customer-classifier-app.herokuapp.com/predict';
+  const url = 'https://cors-amazon.herokuapp.com/https://customer-classifier-app.herokuapp.com/predict';
   const params = {
       body:JSON.stringify(Data),
       // credentials: 'include',

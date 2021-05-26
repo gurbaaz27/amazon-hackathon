@@ -26,7 +26,7 @@ async function predict()
          Year_Of_Publication : public_dict[Math.floor(randomNumber(0,4))]
     };
     console.log(Data);
-  const url = 'https://cors-anywhere.herokuapp.com/https://bandits-api.herokuapp.com/predict';
+  const url = 'https://cors-amazon.herokuapp.com/https://bandits-api.herokuapp.com/predict';
   const params = {
       body:JSON.stringify(Data),
       // credentials: 'include',
@@ -36,8 +36,12 @@ async function predict()
       },
   }
   await gette(params,url).then(label => {
-      console.log(label);
-   
+      console.log(label.labels);
+      document.getElementById("a").innerHTML=label.labels[0];
+      document.getElementById("b").innerHTML=label.labels[1];
+      document.getElementById("c").innerHTML=label.labels[2];
+      document.getElementById("d").innerHTML=label.labels[3];
+      document.getElementById("e").innerHTML=label.labels[4];
   });
 
 }
