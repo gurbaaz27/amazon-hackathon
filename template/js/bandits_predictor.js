@@ -42,6 +42,7 @@ async function predict()
       document.getElementById("c").innerHTML=label.labels[2];
       document.getElementById("d").innerHTML=label.labels[3];
       document.getElementById("e").innerHTML=label.labels[4];
+      document.getElementById("f").innerHTML=label.labels[5];
   });
 
 }
