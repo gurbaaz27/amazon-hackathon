@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Tender Shop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta property="og:title" content="Tender Shop" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:description"
+      content="Minimalist  Responsive eCommerce Template"
+    />
+    <meta property="og:url" content="http://ninetheme.com/" />
+    <meta property="og:image" content="http://ninetheme.com/logo.png" />
+    <link rel="stylesheet" href="css/css-bootstrap.min.css" />
+    <link rel="stylesheet" href="css/css-font.css" />
+    <link rel="stylesheet" href="css/css-style.css" />
+
+
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="icon" href="favicons/9015-img-hsfavicon.png" />
+
+
+    <script type="text/javascript">
+      // Add Google Font name here
+
+      WebFontConfig = { google: { families: ["Bangers", "Lato"] } };
+      (function () {
+        var wf = document.createElement("script");
+        wf.src =
+          ("https:" == document.location.protocol ? "https" : "http") +
+          "://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js";
+        wf.type = "text/javascript";
+        wf.async = "true";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(wf, s);
+      })();
+    </script>
+
+
+    <style type="text/css">
+      /* Add Google Font name here */
+      .rectangle {
+  height: 150px;
+  width: 30%;
+  border:5px black;
+  color:black;
+  background-color:rgb(180, 178, 178);
+  /* align-items: center; */
+}
+      .wf-active {
+        font-family: "Lato", serif;
+        font-size: 14px;
+      }
+      .wf-active .logo {
+        font-family: "Bangers", serif;
+      }
+    </style>
+ 
+  </head>
+  <body class="wf-active">
+    <div class="header-container">
+      <div class="container welcome">
+        <div class="row">
+          <div class="pull-left greet">
+            Welcome shopper, <a href="#">login here</a>
+          </div>
+          <div class="pull-right cart tright">
+            <div class="counter">
+              <a href="javascript:void(0);"
+                ><i class="icon-basket"></i> Your cart
+              </a>
+              : <span class="theme">$139</span>
+            </div>
+
+            <div class="cartbubble">
+              <div class="arrow-box">
+                <div class="clearfix">
+                  <a href="#">Sample Tshirt Stripes...</a>
+                  <span class="theme pull-right">$55</span>
+                </div>
+
+                <div class="clearfix">
+                  <a href="#">Sample Dress in cart</a>
+                  <span class="theme pull-right">$73</span>
+                </div>
+
+                <div class="clearfix">
+                  <a href="#">Sample Socks in cart</a>
+                  <span class="theme pull-right">$11</span>
+                </div>
+                <hr />
+
+                <div class="clearfix">
+                  TOTAL <span class="theme pull-right">$139</span>
+                </div>
+                <hr />
+                <div class="clearfix">
+                  <a href="javascript:void(0)" id="closeit">Close</a>
+                  <a href="#" class="btn theme btn-mini pull-right"
+                    >Checkout</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container head">
+        <div class="row">
+          <div class="col-sm-12 clearfix">
+            <div class="top row">
+              <div class="col-sm-8 logo text" style="display: none">
+                <a href="index.html">TenderShop</a>
+              </div>
+              <div class="col-sm-8 logo image">
+                <a href="index.html"
+                  ><img src="images/img-highreslogo.png" alt=""
+                /></a>
+              </div>
+              <div class="cart col-sm-4">
+                <form action="#" class="topsearch">
+                  <input
+                    type="search"
+                    class="top-search"
+                    placeholder="Search"
+                  />
+                  <button type="submit"><i class="icon-search"></i></button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-menu">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <nav class="horizontal-nav full-width">
+                <ul class="nav" id="nav">
+                  <li>
+                    <a href="#">Pages</a>
+                    <ul class="nav">
+                      <li><a href="index.html">Homepage Default</a></li>
+                      <li>
+                        <a href="#">Homepage Filterable</a>
+                      </li>
+                      <li>
+                        <a href="#">Slider with Carousel</a>
+                      </li>
+                      <li><a href="#">Full page</a></li>
+                      <li>
+                        <a href="#">Right sidebar</a>
+                      </li>
+                      <li><a href="#">Left sidebar</a></li>
+                      <li><a href="#">Login Page</a></li>
+                      <li><a href="#">Checkout Page</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">Product</a>
+                    <ul class="nav">
+                      <li>
+                        <a href="#">Products List Sortable</a>
+                      </li>
+                      <li>
+                        <a href="#"
+                          >Products list with sidebar</a
+                        >
+                      </li>
+                      <li><a href="#">Product page</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Features</a></li>
+                  <li>
+                    <a href="#">Blog</a>
+                    <ul class="nav">
+                      <li>
+                        <a href="#">blog right sidebar</a>
+                      </li>
+                      <li>
+                        <a href="#">blog left sidebar</a>
+                      </li>
+                      <li>
+                        <a href="#">post right sidebar</a>
+                      </li>
+                      <li>
+                        <a href="#">post left sidebar</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="homepagecontainer">
+      <div class="slides home-col-sm-12">
+        <div class="container">
+          <div id="flexslider" class="flexslider row">
+            <ul class="slides col-sm-12">
+              <li>
+                <img src="images/banner-banner-width1.png" alt="" />
+                <p class="flex-caption">
+                  <strong>CAPTION</strong><br />
+                  Put any caption, description or anything here.<br /><br />
+                  <a href="#" class="btn theme">$69 | BUY IT</a>
+                </p>
+              </li>
+
+              <li>
+                <a href="#"
+                  ><img src="images/banner-banner-width2.png" alt=""
+                /></a>
+              </li>
+
+              <li><img src="images/banner-banner-width3.png" alt="" /></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+
+      <section class="home-panel promo">
+        <div class="container justify-content-md-center" style="display: block">
+          <div class="row ">
+            <div class="col-sm-4 rectangle" style="margin: 5px; border-width:10px;border-color: white;border-style:double;text-align: center">
+              <a style="margin-top:30px; margin: bottom 30px;" onclick="learner('a')" id="a">hello!</a>
+            </div>
+            <div class="col-sm-4 rectangle" style="margin: 5px; border-width:10px;border-color: white;border-style:double;text-align: center;">
+              <a style="margin-top:30px; margin: bottom 30px;" onclick="learner('b')" id="b">hello!</a>
+            </div>
+            <div class="col-sm-4 rectangle"style="margin: 5px; border-width:10px;border-color: white;border-style:double;text-align: center;">
+              <a style="margin-top:30px; margin: bottom 30px;" onclick="learner('c')" id="c">hello!</a>
+            </div>
+            <div class="col-sm-4 rectangle"style="margin: 5px; border-width:10px;border-color: white;border-style:double;text-align: center;">
+              <a style="margin-top:30px; margin: bottom 30px;" onclick="learner('d')" id="d">hello!</a>
+            </div>
+            <div class="col-sm-4 rectangle"style="margin: 5px; border-width:10px;border-color: white;border-style:double;text-align: center;">
+              <a style="margin-top:30px; margin: bottom 30px;" onclick="learner('e')" id="e">hello!</a>
+            </div>
+            <div class="col-sm-4 rectangle"style="margin: 5px; border-width:10px;border-color: white;border-style:double;text-align: center;">
+              <a style="margin-top:30px; margin: bottom 30px;" onclick="learner('f')" id="f">hello!</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+	  <button type="button" id="bn" class="btn btn-info btn-lg" data-toggle="modal" style="display: none;"  data-target="#myModal">Open Modal</button>
+
+
+	  <div class="modal fade" id="myModal" role="dialog">
+		<div class="modal-dialog">
+		
+		  <!-- Modal content-->
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <button type="button" class="close" data-dismiss="modal">&times;</button>
+			  <h4 class="modal-title">Modal Header</h4>
+			</div>
+			<div id="mypart" class="modal-body">
+			  <p>Some text in the modal.</p>
+			</div>
+			<div class="modal-footer">
+			  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+		  </div>
+		  
+		</div>
+	  </div>
+
+        <section class="feat">
+          <div class="row">
+            <div class="col-sm-12">
+              <h6 class="subhead theme"><strong>FEATURED ITEMS</strong></h6>
+              <div class="tab-content row">
+                <div class="tab-pane active" id="feat">
+                  <article class="col-sm-4 product-box">
+                    <div class="product-inner">
+                      <div class="view view-thumb">
+                        <div class="image">
+                          <img src="images/products-4.gif" alt="" />
+                        </div>
+                        <div class="mask">
+                          <a href="#"></a>
+                          <p>
+                            Sample Product HumbleShopSample Product
+                            HumbleShopSample Product HumbleShopSample Product
+                            HumbleS..
+                          </p>
+                          <a href="#" class="info">View</a>
+                          <a href="#" class="info">Buy</a>
+                        </div>
+                      </div>
+                      <h2 class="price">
+                        <span class="price-old">$120.68</span>
+                        <span class="price-new">$39.60</span>
+                      </h2>
+                      <p>
+                        <a href="#">Sample Product Tendershop</a>
+                      </p>
+                    </div>
+                  </article>
+                  <article class="col-sm-4 product-box">
+                    <div class="product-inner">
+                      <div class="view view-thumb">
+                        <div class="image">
+                          <img src="images/products-4.gif" alt="" />
+                        </div>
+                        <div class="mask">
+                          <a href="#"></a>
+                          <p>
+                            Sample Product HumbleShopSample Product
+                            HumbleShopSample Product HumbleShopSample Product
+                            HumbleS..
+                          </p>
+                          <a href="#" class="info">View</a>
+                          <a href="#" class="info">Buy</a>
+                        </div>
+                      </div>
+                      <h2 class="price">
+                        <span class="price-old">$120.68</span>
+                        <span class="price-new">$39.60</span>
+                      </h2>
+                      <p>
+                        <a href="#">Sample Product Tendershop</a>
+                      </p>
+                    </div>
+                  </article>
+                  <article class="col-sm-4 product-box">
+                    <div class="product-inner">
+                      <div class="view view-thumb">
+                        <div class="image">
+                          <img src="images/products-4.gif" alt="" />
+                        </div>
+                        <div class="mask">
+                          <a href="#"></a>
+                          <p>
+                            Sample Product HumbleShopSample Product
+                            HumbleShopSample Product HumbleShopSample Product
+                            HumbleS..
+                          </p>
+                          <a href="#" class="info">View</a>
+                          <a href="#" class="info">Buy</a>
+                        </div>
+                      </div>
+                      <h2 class="price">
+                        <span class="price-old">$120.68</span>
+                        <span class="price-new">$39.60</span>
+                      </h2>
+                      <p>
+                        <a href="#">Sample Product Tendershop</a>
+                      </p>
+                    </div>
+                  </article>
+                  <article class="col-sm-4 product-box">
+                    <div class="product-inner">
+                      <div class="view view-thumb">
+                        <div class="image">
+                          <img src="images/products-4.gif" alt="" />
+                        </div>
+                        <div class="mask">
+                          <a href="#"></a>
+                          <p>
+                            Sample Product HumbleShopSample Product
+                            HumbleShopSample Product HumbleShopSample Product
+                            HumbleS..
+                          </p>
+                          <a href="#" class="info">View</a>
+                          <a href="#" class="info">Buy</a>
+                        </div>
+                      </div>
+                      <h2 class="price">
+                        <span class="price-old">$120.68</span>
+                        <span class="price-new">$39.60</span>
+                      </h2>
+                      <p>
+                        <a href="#">Sample Product Tendershop</a>
+                      </p>
+                    </div>
+                  </article>
+                  <article class="col-sm-4 product-box">
+                    <div class="product-inner">
+                      <div class="view view-thumb">
+                        <div class="image">
+                          <img src="images/products-4.gif" alt="" />
+                        </div>
+                        <div class="mask">
+                          <a href="#"></a>
+                          <p>
+                            Sample Product HumbleShopSample Product
+                            HumbleShopSample Product HumbleShopSample Product
+                            HumbleS..
+                          </p>
+                          <a href="#" class="info">View</a>
+                          <a href="#" class="info">Buy</a>
+                        </div>
+                      </div>
+                      <h2 class="price">
+                        <span class="price-old">$120.68</span>
+                        <span class="price-new">$39.60</span>
+                      </h2>
+                      <p>
+                        <a href="#">Sample Product Tendershop</a>
+                      </p>
+                    </div>
+                  </article>
+                  <article class="col-sm-4 product-box">
+                    <div class="product-inner">
+                      <div class="view view-thumb">
+                        <div class="image">
+                          <img src="images/products-4.gif" alt="" />
+                        </div>
+                        <div class="mask">
+                          <a href="#"></a>
+                          <p>
+                            Sample Product HumbleShopSample Product
+                            HumbleShopSample Product HumbleShopSample Product
+                            HumbleS..
+                          </p>
+                          <a href="#" class="info">View</a>
+                          <a href="#" class="info">Buy</a>
+                        </div>
+                      </div>
+                      <h2 class="price">
+                        <span class="price-old">$120.68</span>
+                        <span class="price-new">$39.60</span>
+                      </h2>
+                      <p>
+                        <a href="#">Sample Product Tendershop</a>
+                      </p>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h6 class="subhead theme brands"><strong>DESIGNER BRANDS</strong></h6>
+          <div class="tab-brand">
+            <div id="flexcarousel-brands" class="flexslider">
+              <ul class="slides">
+                <li><img src="images/brands-branda.jpg" alt="" /></li>
+                <li><img src="images/brands-brandb.jpg" alt="" /></li>
+                <li><img src="images/brands-brandc.jpg" alt="" /></li>
+                <li><img src="images/brands-brandd.jpg" alt="" /></li>
+                <li><img src="images/brands-brande.jpg" alt="" /></li>
+                <li><img src="images/brands-brandf.jpg" alt="" /></li>
+                <li><img src="images/brands-brandg.jpg" alt="" /></li>
+                <li><img src="images/brands-brandh.jpg" alt="" /></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <section class="row foot">
+          <article class="col-sm-3">
+            <strong>Quick Links</strong>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Privacy</a></li>
+              <li><a href="#">Returns Policies</a></li>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Feedback</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </article>
+          <article class="col-sm-3">
+            <strong>Latest Post</strong>
+            <ul>
+              <li>
+                <a href="#">Big things are on the way</a
+                ><br /><small>posted on April 24, 2012</small>
+              </li>
+              <li>
+                <a href="#">Product Image Galleries</a
+                ><br /><small>posted on June 13, 2012</small>
+              </li>
+              <li>
+                <a href="#"
+                  >So many options Reign is feature-packed</a
+                ><br /><small>posted on May 9, 2012</small>
+              </li>
+            </ul>
+          </article>
+          <article class="col-sm-3">
+            <strong>Tweets</strong>
+            <div class="widget-body twitterfeed iconlist"></div>
+          </article>
+          <article class="col-sm-3">
+            <strong>Newsletter</strong>
+            <div>
+              <form class="form-inline">
+                <input
+                  class="input-medium"
+                  type="text"
+                  placeholder="Email address"
+                />
+                <button class="btn"><i class="icon-direction"></i></button>
+              </form>
+            </div>
+            <address class="row">
+              <div class="pull-left clabel"><i class="icon-location"></i></div>
+              <div class="pull-left cdata">
+                1234 Street City, ST 73243 California
+              </div>
+            </address>
+            <address class="row">
+              <div class="pull-left clabel"><i class="icon-phone"></i></div>
+              <div class="pull-left cdata">888-555-1234</div>
+            </address>
+            <address class="row">
+              <div class="pull-left clabel"><i class="icon-mail"></i></div>
+              <div class="pull-left cdata">
+                <a href="#"
+                  ><span
+                    class="__cf_email__"
+                    data-cfemail="8de5e8e1e1e2cdd9e8e3e9e8fffee5e2fda3eee2e0"
+                    >[email&nbsp;protected]</span
+                  ></a
+                >
+              </div>
+            </address>
+          </article>
+        </section>
+      </div>
+      <section class="row doubleline">
+        <div class="container">
+          <div class="col-sm-6">
+            <div class="payment amex"></div>
+            <div class="payment mastercard"></div>
+            <div class="payment visa"></div>
+            <div class="payment paypal"></div>
+          </div>
+          <div class="col-sm-6 currency">
+            <a href="#" class="active">USD</a> <a href="#">GBP</a>
+            <a href="#">MYR</a> <a href="#">AUD</a>
+          </div>
+        </div>
+      </section>
+      <section class="row social">
+        <div class="container">
+          <div class="pull-left">&copy; 2012 TenderShop</div>
+          <div class="pull-right">
+            <ul>
+              <li>
+                <a href="#"><i class="icon-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="icon-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="icon-gplus"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="icon-pinterest"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="icon-tumblr"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="icon-instagrem"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <script
+      data-cfasync="false"
+      src="js/cloudflare-static-email-decode.min.js"
+    ></script>
+    <script type="text/javascript" src="js/1.8.2-jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?sensor=false"
+    ></script>
+    <script type="text/javascript" src="js/6665-js-jquery.tweet.js"></script>
+    <script type="text/javascript" src="js/973-js-bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/4298-js-shop.js"></script>
+    <script type="text/javascript" src="js/7506-js-script.js"></script>
+    <script type="text/javascript" src="js/predictor.js"></script>
+    <script type="text/javascript" src="js/bandits_predictor.js"></script>
+  </body>
+</html>
