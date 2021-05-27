@@ -18,6 +18,13 @@ The persuit of personalization has long been carried out in shopping websites. F
 
 The **Personalized Discount Coupon Generator** gives **unique discounts** to the users, based on the **user's activitites like time duration, page views, etc.** The **Product Recommndation System** using **Multi-Armed Contextual Bandits** is a unique approach to recommedation. As opposed to **Collaborative Filtering**, this approach **improves over time**, and hence provides **more utility** as compared to the older approach. Furthur details regarding the 2 functionalities can be found below.
 
+## Directory Overview
+
+- **Bandits** : Contains the model, encoders and the training code for the Multi-Armed Contextual Bandits.
+- **Classifier** : Contains the data, model and the encoders for the Personalized Discount Coupons.
+- **Frontend** : Contains the HTML, JS and CSS files for the frontend of our project.
+- **Heroku-APIs** : Contains the code of the APIs for both the functionalitites, and the deployment code for Heroku.
+
 ## Personalized Discount Coupon Generator
 
 ### Data Description (Used for Training)
@@ -58,3 +65,4 @@ We again used **Flask API** and **Heroku** for deploying our model. For every us
 - [Proposal Doc](https://docs.google.com/document/d/1h5Fmb2_B-71QAZVFZParN5ByFkh3D7Si6o4j_CZ4Ol8/edit)
 - [A Contextual-Bandit Approach to Personalized News Article Recommendation](https://arxiv.org/pdf/1003.0146.pdf)
 - [Recommendation Dataset](https://www.kaggle.com/arashnic/book-recommendation-dataset)
+- [Classification Dataset](https://drive.google.com/file/d/1QGqnZwcX6o4i7KgmSMlmDdokoMS3Hzk1/view?usp=sharing)
