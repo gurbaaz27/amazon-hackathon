@@ -6,7 +6,7 @@
 ### Team Members :
 
 - [Parth Srivastava](https://www.linkedin.com/in/parth-srivastava-5a10211a2/), UG Sophomore, IIT Kanpur
-- Gurbaaz Singh Nandra, UG Sophomore, IIT Kanpur
+- [Gurbaaz Singh Nandra](https://www.linkedin.com/in/gurbaaznandra/), UG Sophomore, IIT Kanpur
 - Shubh Agarwal, UG Sophomore, IIT Kanpur
 
 ## Problem Overview
@@ -16,7 +16,7 @@ The persuit of personalization has long been carried out in shopping websites. F
 - Personalized Discount Coupon Generator
 - Personalized Product Recommendation using Multi-Armed Contextual Bandits
 
-The **Personalized Discount Coupon Generator** gives **unique discounts** to the users, based on the **user's activitites like time duration, page views, etc.** The **Product Recommndation System** using **Multi-Armed Contextual Bandits** is a unique approach to recommedation. As opposed to **Collaborative Filtering**, this approach **improves over time**, and hence provides **more utility** as compared to the older approach. Furthur details regarding the 2 functionalities can be found below.
+The **Personalized Discount Coupon Generator** gives **unique discounts** to the users, based on the **user's activities like time duration, page views, etc.** The **Product Recommndation System** using **Multi-Armed Contextual Bandits** is a unique approach to recommedation. As opposed to **Collaborative Filtering**, this approach **improves over time**, and hence provides **more utility** as compared to the older approach. Furthur details regarding the 2 functionalities can be found below.
 
 ## Directory Overview
 
