@@ -54,7 +54,12 @@ async function predictor()
     preds = label['label']
     console.log(preds);
     document.getElementById("bn").click();
-    document.getElementById("mypart").innerHTML = 'The Buyer Type is ' + preds;
+    if(preds == 'Window')
+    document.getElementById("mypart").innerHTML = 'Congratulations! You have received a discount of flat 30%';
+    else if(preds=='Buyer')
+    document.getElementById("mypart").innerHTML = 'Congratulations! You have received a discount of flat 15%';
+    else
+    document.getElementById("mypart").innerHTML = 'Congratulations! You have received a discount of flat 50%';
   });
 
 }

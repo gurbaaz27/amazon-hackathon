@@ -46,10 +46,13 @@
       /* Add Google Font name here */
       .rectangle {
   height: 150px;
-  width: 30%;
+  width: 33%;
+  display: flex;
+justify-content: center;
+align-items: center;
   border:5px black;
   color:black;
-  background-color:rgb(180, 178, 178);
+  background-color:rgb(236, 219, 211);
   /* align-items: center; */
 }
       .wf-active {
@@ -210,21 +213,16 @@
           <div id="flexslider" class="flexslider row">
             <ul class="slides col-sm-12">
               <li>
-                <img src="images/banner-banner-width1.png" alt="" />
-                <p class="flex-caption">
-                  <strong>CAPTION</strong><br />
-                  Put any caption, description or anything here.<br /><br />
-                  <a href="#" class="btn theme">$69 | BUY IT</a>
-                </p>
+                <img src="images/im5.jpg" style="height: 460px;"  alt="" />
               </li>
 
               <li>
                 <a href="#"
-                  ><img src="images/banner-banner-width2.png" alt=""
+                  ><img src="images/im4.jpg" style="height: 460px;" alt=""
                 /></a>
               </li>
 
-              <li><img src="images/banner-banner-width3.png" alt="" /></li>
+              <li><img src="images/im6.jpg" style="height: 460px;" alt="" /></li>
             </ul>
           </div>
         </div>
@@ -233,24 +231,25 @@
 
       <section class="home-panel promo">
         <div class="container justify-content-md-center" style="display: block">
+          <h3 class="subhead theme"><strong>RECOMMENDED BOOKS</strong></h3>
           <div class="row ">
-            <div class="col-sm-4 rectangle" style="margin: 5px; border-width:10px;border-color: white;border-style:double;text-align: center">
-              <a style="margin-top:30px; margin: bottom 30px;" onclick="learner('a')" id="a">hello!</a>
+            <div class="col-sm-4 rectangle" style=" border-width:10px;border-color: white;border-style:double;text-align: center">
+              <a  onclick="learner('a')" id="a">Book 1</a>
             </div>
-            <div class="col-sm-4 rectangle" style="margin: 5px; border-width:10px;border-color: white;border-style:double;text-align: center;">
-              <a style="margin-top:30px; margin: bottom 30px;" onclick="learner('b')" id="b">hello!</a>
+            <div class="col-sm-4 rectangle" style=" border-width:10px;border-color: white;border-style:double;text-align: center;">
+              <a  onclick="learner('b')" id="b">Book 2</a>
             </div>
-            <div class="col-sm-4 rectangle"style="margin: 5px; border-width:10px;border-color: white;border-style:double;text-align: center;">
-              <a style="margin-top:30px; margin: bottom 30px;" onclick="learner('c')" id="c">hello!</a>
+            <div class="col-sm-4 rectangle"style=" border-width:10px;border-color: white;border-style:double;text-align: center;">
+              <a  onclick="learner('c')" id="c">Book 3</a>
             </div>
-            <div class="col-sm-4 rectangle"style="margin: 5px; border-width:10px;border-color: white;border-style:double;text-align: center;">
-              <a style="margin-top:30px; margin: bottom 30px;" onclick="learner('d')" id="d">hello!</a>
+            <div class="col-sm-4 rectangle"style=" border-width:10px;border-color: white;border-style:double;text-align: center;">
+              <a  onclick="learner('d')" id="d">Book 4</a>
             </div>
-            <div class="col-sm-4 rectangle"style="margin: 5px; border-width:10px;border-color: white;border-style:double;text-align: center;">
-              <a style="margin-top:30px; margin: bottom 30px;" onclick="learner('e')" id="e">hello!</a>
+            <div class="col-sm-4 rectangle"style=" border-width:10px;border-color: white;border-style:double;text-align: center;">
+              <a  onclick="learner('e')" id="e">Book 5</a>
             </div>
-            <div class="col-sm-4 rectangle"style="margin: 5px; border-width:10px;border-color: white;border-style:double;text-align: center;">
-              <a style="margin-top:30px; margin: bottom 30px;" onclick="learner('f')" id="f">hello!</a>
+            <div class="col-sm-4 rectangle"style=" border-width:10px;border-color: white;border-style:double;text-align: center;">
+              <a  onclick="learner('f')" id="f">Book 6</a>
             </div>
           </div>
         </div>
@@ -266,7 +265,7 @@
 		  <div class="modal-content">
 			<div class="modal-header">
 			  <button type="button" class="close" data-dismiss="modal">&times;</button>
-			  <h4 class="modal-title">Modal Header</h4>
+			  <h4 class="modal-title">Discount Coupon Received !!!</h4>
 			</div>
 			<div id="mypart" class="modal-body">
 			  <p>Some text in the modal.</p>
@@ -279,24 +278,22 @@
 		</div>
 	  </div>
 
-        <section class="feat">
-          <div class="row">
+        <section class="home-panel promo" >
+          <div class="container justify-content-md-center " >
             <div class="col-sm-12">
-              <h6 class="subhead theme"><strong>FEATURED ITEMS</strong></h6>
+              <h3 class="subhead theme"><strong>FEATURED ITEMS</strong></h3>
               <div class="tab-content row">
                 <div class="tab-pane active" id="feat">
                   <article class="col-sm-4 product-box">
                     <div class="product-inner">
                       <div class="view view-thumb">
-                        <div class="image">
-                          <img src="images/products-4.gif" alt="" />
+                        <div >
+                          <img src="images/pic.jpg" style="height: 150px;" alt="" />
                         </div>
                         <div class="mask">
                           <a href="#"></a>
                           <p>
-                            Sample Product HumbleShopSample Product
-                            HumbleShopSample Product HumbleShopSample Product
-                            HumbleS..
+                            The Alchemist
                           </p>
                           <a href="#" class="info">View</a>
                           <a href="#" class="info">Buy</a>
@@ -307,22 +304,20 @@
                         <span class="price-new">$39.60</span>
                       </h2>
                       <p>
-                        <a href="#">Sample Product Tendershop</a>
+                        <a href="#">The Alchemist</a>
                       </p>
                     </div>
                   </article>
                   <article class="col-sm-4 product-box">
                     <div class="product-inner">
                       <div class="view view-thumb">
-                        <div class="image">
-                          <img src="images/products-4.gif" alt="" />
+                        <div >
+                          <img src="images/pic2.jpg" style="height: 150px;" alt="" />
                         </div>
                         <div class="mask">
                           <a href="#"></a>
                           <p>
-                            Sample Product HumbleShopSample Product
-                            HumbleShopSample Product HumbleShopSample Product
-                            HumbleS..
+                            Wings of Fire
                           </p>
                           <a href="#" class="info">View</a>
                           <a href="#" class="info">Buy</a>
@@ -333,22 +328,20 @@
                         <span class="price-new">$39.60</span>
                       </h2>
                       <p>
-                        <a href="#">Sample Product Tendershop</a>
+                        <a href="#">Wings of Fire</a>
                       </p>
                     </div>
                   </article>
                   <article class="col-sm-4 product-box">
                     <div class="product-inner">
                       <div class="view view-thumb">
-                        <div class="image">
-                          <img src="images/products-4.gif" alt="" />
+                        <div >
+                          <img src="images/pic3.jpg" style="height: 150px;" alt="" />
                         </div>
                         <div class="mask">
                           <a href="#"></a>
                           <p>
-                            Sample Product HumbleShopSample Product
-                            HumbleShopSample Product HumbleShopSample Product
-                            HumbleS..
+                            From the Big Bang to the Black Hole
                           </p>
                           <a href="#" class="info">View</a>
                           <a href="#" class="info">Buy</a>
@@ -359,22 +352,20 @@
                         <span class="price-new">$39.60</span>
                       </h2>
                       <p>
-                        <a href="#">Sample Product Tendershop</a>
+                        <a href="#">From the Big Bang to the Black Hole</a>
                       </p>
                     </div>
                   </article>
                   <article class="col-sm-4 product-box">
                     <div class="product-inner">
                       <div class="view view-thumb">
-                        <div class="image">
-                          <img src="images/products-4.gif" alt="" />
+                        <div >
+                          <img src="images/pic4.jpg" style="height: 150px;" alt="" />
                         </div>
                         <div class="mask">
                           <a href="#"></a>
                           <p>
-                            Sample Product HumbleShopSample Product
-                            HumbleShopSample Product HumbleShopSample Product
-                            HumbleS..
+                            Mein Kampf
                           </p>
                           <a href="#" class="info">View</a>
                           <a href="#" class="info">Buy</a>
@@ -385,22 +376,20 @@
                         <span class="price-new">$39.60</span>
                       </h2>
                       <p>
-                        <a href="#">Sample Product Tendershop</a>
+                        <a href="#">Mein Kampf</a>
                       </p>
                     </div>
                   </article>
                   <article class="col-sm-4 product-box">
                     <div class="product-inner">
                       <div class="view view-thumb">
-                        <div class="image">
-                          <img src="images/products-4.gif" alt="" />
+                        <div >
+                          <img src="images/pic5.jpg" style="height: 150px;" alt="" />
                         </div>
                         <div class="mask">
                           <a href="#"></a>
                           <p>
-                            Sample Product HumbleShopSample Product
-                            HumbleShopSample Product HumbleShopSample Product
-                            HumbleS..
+                            The Theory of Evolution
                           </p>
                           <a href="#" class="info">View</a>
                           <a href="#" class="info">Buy</a>
@@ -411,22 +400,20 @@
                         <span class="price-new">$39.60</span>
                       </h2>
                       <p>
-                        <a href="#">Sample Product Tendershop</a>
+                        <a href="#">The Theory of Evolution</a>
                       </p>
                     </div>
                   </article>
                   <article class="col-sm-4 product-box">
                     <div class="product-inner">
                       <div class="view view-thumb">
-                        <div class="image">
-                          <img src="images/products-4.gif" alt="" />
+                        <div >
+                          <img src="images/pic6.jpg" style="height: 150px;" alt="" />
                         </div>
                         <div class="mask">
                           <a href="#"></a>
                           <p>
-                            Sample Product HumbleShopSample Product
-                            HumbleShopSample Product HumbleShopSample Product
-                            HumbleS..
+                            The Eternals
                           </p>
                           <a href="#" class="info">View</a>
                           <a href="#" class="info">Buy</a>
@@ -437,7 +424,7 @@
                         <span class="price-new">$39.60</span>
                       </h2>
                       <p>
-                        <a href="#">Sample Product Tendershop</a>
+                        <a href="#">The Eternals</a>
                       </p>
                     </div>
                   </article>
@@ -445,8 +432,9 @@
               </div>
             </div>
           </div>
-
-          <h6 class="subhead theme brands"><strong>DESIGNER BRANDS</strong></h6>
+        </section>
+        <section class="feat">
+          <h3 class="subhead theme brands"><strong>DESIGNER BRANDS</strong></h3>
           <div class="tab-brand">
             <div id="flexcarousel-brands" class="flexslider">
               <ul class="slides">

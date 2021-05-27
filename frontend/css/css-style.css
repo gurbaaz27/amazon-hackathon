@@ -18,7 +18,7 @@ a {color:black}
 button.theme, .share a, .share a:hover, .horizontal-nav li a:hover, .btn.theme, .btn-theme, .product_list_widget .amount {color:white}
 footer {color: #777}
 footer a {color: #333}
-a:hover, footer a:hover, footer a.active, aside a, em.on, .theme, .page h5, a.theme , .product .sidebar h5, #comments strong {color: #E55137}
+a:hover, footer a:hover, footer a.active, aside a, em.on, .theme, .page h5, a.theme , .product .sidebar h5, #comments strong {color: #E55137;cursor: pointer}
 img {width: 100%}
 /* ================= */
 /* Background colors */
@@ -186,7 +186,7 @@ h2.price  .price-old{text-decoration: line-through; color: #F00; border-right: 1
 /* Hover effect */
 /* ============ */
 
-.view { max-width: 320px; overflow: hidden; position: relative; text-align: center; cursor: default; background: #fff; }
+.view {  overflow: hidden; position: relative; text-align: center; cursor: default; background: #fff; }
 .view .mask,
 .view .content { height: 100%; position: absolute; overflow: hidden; top: 0; left: 0; }
 .view img { display: block; position: relative; }
@@ -536,10 +536,10 @@ footer article {padding-top: 0 !important;border: none !important;}
 .flexslider a:active,
 .flex-container a:focus,
 .flexslider a:focus  {outline: none;}
-.slides,
+/* .slides, */
 .flex-control-nav,
 .flex-direction-nav {margin: 0; padding: 0; list-style: none; z-index: 9990;} 
-
+.slides{margin: 0; padding: 0; list-style: none;}
 /* FlexSlider Necessary Styles
 *********************************/ 
 .flexslider {margin: 0; padding: 0;}
